@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/bufbuild/connect-go v1.5.1
-	github.com/programmablemike/todo-api v0.0.0-20230202182201-3aaf0791a893
+	github.com/programmablemike/todo-api v0.0.0-20230202194901-e3118b1460c3
 	github.com/rs/zerolog v1.29.0
 	github.com/urfave/cli/v2 v2.24.2
 	golang.org/x/net v0.4.0

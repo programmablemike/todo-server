@@ -36,6 +36,13 @@ func (ts *TodoServer) ListTasks(
 	return nil, nil
 }
 
+func (ts *TodoServer) MarkTask(
+	ctx context.Context,
+	req *connect.Request[todov1.MarkTaskRequest],
+) (*connect.Response[todov1.MarkTaskResponse], error) {
+	return nil, nil
+}
+
 func NewServerCommand() *cli.Command {
 	return &cli.Command{
 		Name:  "server",
