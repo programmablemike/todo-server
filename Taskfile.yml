@@ -9,6 +9,10 @@ tasks:
     desc: Build the backend server
     cmds:
     - go build -o ./bin/todo {{.CLI_ARGS}} main.go
+  test:
+    desc: Run the tests
+    cmds:
+    - go test {{.CLI_ARGS}} ./...
   run:
     desc: Run the backend server from source
     cmds:
