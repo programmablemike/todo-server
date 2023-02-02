@@ -6,6 +6,10 @@ tasks:
     cmds:
     - go get
   build:
-    desc: Build the backend
+    desc: Build the backend server
     cmds:
-    - go build -o ./bin/todo main.go
+    - go build -o ./bin/todo {{.CLI_ARGS}} main.go
+  run:
+    desc: Run the backend server from source
+    cmds:
+    - go run main.go {{.CLI_ARGS}}
