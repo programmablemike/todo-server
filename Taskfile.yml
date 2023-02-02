@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  setup:
+    desc: Setup the dependencies
+    cmds:
+    - go get
+  build:
+    desc: Build the backend
+    cmds:
+    - go build -o ./bin/todo main.go
